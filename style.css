@@ -1,0 +1,106 @@
+body{
+    font-size: 14px;
+    font-family: "Halvetica", sans-serif;
+}
+p{
+    margin: 0;
+}
+.navbar-brand{
+    width: 100px;
+    height: 34px;
+    background-color: #0d28a6;
+}
+.navbar, #banner{
+    background-color: #F1F3FF;
+}
+.btn-green{
+    background-color: #5CB85F;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+/* Banner */
+#banner p{
+    margin: 25px 0;
+}
+
+/* Our Services */
+#our-services ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#our-services{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+#our-services li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#our-services li:before{
+    content: url(assets/Group53.png);
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+#our-services img{
+    height: 374px;
+    margin-right: 40px;
+}
+.border-secondary{
+    border: 1px solid #d0d0d0;
+}
+
+/* Why US */
+#why-us{
+    padding:0 50px;
+}
+#why-us .card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 24px;
+}
+#why-us .card div{
+   padding: 10px;
+   margin: 10px;
+    justify-content: space-around;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d0d0d0;
+    border-radius: 10px;
+}
+#why-us .card div img{
+    padding: 5px;
+    width: 50px;
+}
+.card {
+    margin: auto;
+    padding: 10px;
+    border: none;
+}
+
+/* Testimonial */
+.single-box{
+    background-color: #F1F3FF;
+}
+.button{
+    border-radius: 50%;
+}
+
+/* Sewa Mobil */
+#content border{
+    background-color: #0D28A6;
+}
+#content2 h2{
+    color: white;
+}
+#content2 p{
+    color: white;
+}
