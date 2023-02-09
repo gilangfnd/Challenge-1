@@ -1,106 +1,265 @@
-body{
+body {
     font-size: 14px;
     font-family: "Halvetica", sans-serif;
-}
-p{
     margin: 0;
 }
-.navbar-brand{
+
+p {
+    margin: 0;
+}
+
+.navbar-brand {
     width: 100px;
     height: 34px;
     background-color: #0d28a6;
 }
-.navbar, #banner{
+
+.navbar,
+#banner {
     background-color: #F1F3FF;
 }
-.btn-green{
+
+.btn-green {
     background-color: #5CB85F;
     color: #fff;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
+/* Sidenav */
+.mySidenav h3{
+    display: flex;
+    justify-content: ;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 50%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family: "Halvetica", sans-serif;
+}
+
+.sidenav a:hover {
+    color: #00000099;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    span {
+        display: none;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 /* Banner */
-#banner p{
+#banner p {
     margin: 25px 0;
 }
 
 /* Our Services */
-#our-services ul{
+#our-services ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 }
-#our-services{
+
+#our-services h2 {
+    margin-top: 20px;
+}
+
+#our-services {
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0;
 }
-#our-services li{
+
+#our-services li {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-#our-services li:before{
+
+#our-services li:before {
     content: url(assets/Group53.png);
     margin-right: 15px;
     width: 24px;
     height: 24px;
 }
-#our-services img{
-    height: 374px;
-    margin-right: 40px;
-}
-.border-secondary{
+
+.border-secondary {
     border: 1px solid #d0d0d0;
 }
 
 /* Why US */
-#why-us{
-    padding:0 50px;
+#why-us {
+    padding: 30px 0;
 }
-#why-us .card{
-    display: flex;
+
+#why-us .card {
+    /* display: flex; */
     justify-content: space-between;
     flex-direction: row;
-    padding: 24px;
+    margin: 10px;
 }
-#why-us .card div{
-   padding: 10px;
-   margin: 10px;
-    justify-content: space-around;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #d0d0d0;
-    border-radius: 10px;
+
+#why-us .card-body {
+    margin-top: 10%;
 }
-#why-us .card div img{
-    padding: 5px;
-    width: 50px;
-}
-.card {
-    margin: auto;
-    padding: 10px;
-    border: none;
+
+@media screen and (max-width:991px) {
+    .custom-text {
+        text-align: center;
+    }
 }
 
 /* Testimonial */
-.single-box{
-    background-color: #F1F3FF;
+#testimonial {
+    padding: 30px 0;
 }
-.button{
-    border-radius: 50%;
+
+#testimonial .card {
+    background-color: #F1F3FF;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#testimonial .col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+
+}
+
+#testimonial img {
+    width: 80px;
+}
+
+@media screen and (max-width:991px) {
+    #testimonial img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px 0;
+    }
 }
 
 /* Sewa Mobil */
-#content border{
-    background-color: #0D28A6;
+.sewa {
+    padding: 30px 0;
+    background-color: #0d28a6;
+    border-radius: 13px;
 }
-#content2 h2{
-    color: white;
+
+.sewa h2 {
+    color: #FFFFFF;
 }
-#content2 p{
-    color: white;
+
+.sewa p {
+    color: #FFFFFF;
+    padding-top: 16px;
+    margin: 0 30%;
+}
+
+.sewa a {
+    margin-top: 52px;
+}
+
+@media screen and (max-width:991px) {
+
+    .sewa h2,
+    .sewa p {
+        margin: 0 10%;
+    }
+}
+
+/* FAQ */
+#faq {
+    padding: 30px 0;
+}
+
+.accordion,
+.accordion-item {
+    padding-bottom: 20px;
+    border: none;
+}
+
+.accordion h2 {
+    border: solid;
+    border-width: 1px;
+    border-color: #D4D4D4;
+    border-radius: 4px;
+}
+
+#faq p {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+/*Footer */
+footer {
+    padding: 30px 0;
+}
+
+footer p {
+    padding-bottom: 20px;
+}
+
+footer .col-2 {
+    font-weight: bold;
+}
+
+div .image {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+footer div.brand {
+    width: 100px;
+    height: 34px;
+    background-color: #0d28a6;
+    margin: none;
 }
